@@ -195,4 +195,37 @@ body {
     color: #ffffff;
 }
 
+.main-content {
+    padding: 60px 0; /* Adjusted for fixed navbar */
+    margin-top: 70px;
+    min-height: calc(100vh - 140px); /* Full height minus navbar */
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #1e293b;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
 
+.filter-btn {
+    background-color: #e2e8f0;
+    color: #01050a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #7dd2f1;
+    color: #ffffff;
+}
