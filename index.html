@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechVibe - Home</title>
+
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <!-----Our navigation bar----->
@@ -15,13 +17,36 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart (0)</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (0)</a></li>
             </ul>
         </div> 
     </nav>
 
-    <!------->
+    <!---- hero section - big banner/header at the shop --->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to TechVibe</h1>
+            <p>Find the best electronics products at unbeatable prices!</p>
+            <a href="products.html" class="btn">Shop Now!</a>
+        </div>                  
+    </section>
 
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featured-products">
+                <!----Product will be dynamically loaded here from JavaScript--->
+            </div>
+        </div>
+    </section>
 
+    <!----Footer section with contact information and links--->
+    <footer class="footer">
+        <p>&copy; 2025 TechVibe. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  
+}
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Horizontal padding for nav items */
+    display: flex; /* Flexbox for navbar items */
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7dd2f1;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Space between nav items */
+    align-items: center; /* Center items vertically */
+
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500; /* Slightly bolder text */
+    
+}
+.nav-menu a:hover {
+    color: #7dd2f1; /* Change color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.cart-link {
+    background-color: #7dd2f1;
+    color: #fff !important;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 11px;
+
+}
+
+.cart-link:hover {
+    background-color: #5bb8e0; /* Darker shade on hover */
+}
